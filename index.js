@@ -2,6 +2,7 @@
 const express = require("express");
 const customerRoutes = require("./routes/customerRoutes");
 const server = express();
+const cors = require("cors");
 
 server.listen(4000);
 server.use((req, res, next)=>{
