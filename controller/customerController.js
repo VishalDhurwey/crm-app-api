@@ -18,7 +18,12 @@ const customers= [
     }
 ];
 
-
 module.exports.get = (req, res)=>{
+    res.status(200).send(customers);
+}
+
+module.exports.add = (req, res)=>{
+    const customer = req.body;
+    customers.push(customer);
     res.status(200).send(customers);
 }

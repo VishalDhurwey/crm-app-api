@@ -1,10 +1,12 @@
 
 const express = require("express");
+const bodyparser = require("body-parser");
 const customerRoutes = require("./routes/customerRoutes");
 const server = express();
 const cors = require("cors");
 
 server.listen(4000);
+server.use(bodyparser.json());
 server.use((req, res, next)=>{
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
