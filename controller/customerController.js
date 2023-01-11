@@ -24,6 +24,16 @@ module.exports.get = (req, res)=>{
 
 module.exports.add = (req, res)=>{
     const customer = req.body;
+    console.log(customer);
     customers.push(customer);
+    console.log(customers);
+    res.status(200).send(customers);
+}
+
+module.exports.update = (req, res)=>{
+    const customer = req.body;
+    let foundCustomerIndex = customers.findIndex(c=> c.name==customer.name);
+    customers[foundCustomerIndex]=customer;
+    console.log(customers);
     res.status(200).send(customers);
 }
