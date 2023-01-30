@@ -1,4 +1,6 @@
 
+const repo = require("../repositories/customerRepository");
+
 const customers= [
     {
         "name":"Infosys",
@@ -24,8 +26,9 @@ module.exports.get = (req, res)=>{
 
 module.exports.add = (req, res)=>{
     const customer = req.body;
-    customers.push(customer);
-    res.status(200).send(customers);
+    repo.add(customer, ()=>{
+        return res.status(200).send();
+    });
 }
 
 module.exports.update = (req, res)=>{

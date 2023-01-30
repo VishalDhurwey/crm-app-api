@@ -1,5 +1,5 @@
 1. Install MongoDB server and Compass. - Done.
-2. Connect to Mongodb from nodejs.
+2. Connect to Mongodb from nodejs. - Done.
 3. Write code to add new customers in mongodb.
 4. Write code to pull all customers from mongodb.
 5. Write code to update an existing customer.
