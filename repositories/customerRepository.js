@@ -8,3 +8,11 @@ module.exports.add = (customer, cb)=>{
             cb();
         });
 }
+
+module.exports.getAll = (cb)=>{
+    const collection = mongodb.getCollection("customer");
+    collection.find().toArray()
+        .then((res)=>{
+            cb(res);
+        })
+}

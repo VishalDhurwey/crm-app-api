@@ -21,7 +21,9 @@ const customers= [
 ];
 
 module.exports.get = (req, res)=>{
-    res.status(200).send(customers);
+    repo.getAll((docs)=>{
+        return res.status(200).send(docs);
+    })
 }
 
 module.exports.add = (req, res)=>{
