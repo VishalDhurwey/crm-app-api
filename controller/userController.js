@@ -1,5 +1,24 @@
 
-const users = [];
+const users = [
+    {
+        "name":"John Doe",
+        "username":"john.doe",
+        "password":"Password1",
+        "email":"john.doe@gmail.com",
+        "isActive":true
+    },
+    {
+        "name":"David Doe",
+        "username":"david.doe",
+        "password":"Password1",
+        "email":"david.doe@gmail.com",
+        "isActive":true
+    }
+];
+
+module.exports.getAll = (req,res)=>{
+    res.status(200).send(users);
+}
 
 module.exports.signup=(req, res)=>{
     let user = req.body;
