@@ -1,6 +1,4 @@
 
-const repo = require("../repositories/customerRepository");
-
 const customers= [
     {
         "name":"Infosys",
@@ -21,16 +19,13 @@ const customers= [
 ];
 
 module.exports.get = (req, res)=>{
-    repo.getAll((docs)=>{
-        return res.status(200).send(docs);
-    })
+    res.status(200).send(customers);
 }
 
 module.exports.add = (req, res)=>{
     const customer = req.body;
-    repo.add(customer, ()=>{
-        return res.status(200).send();
-    });
+    customers.push(customer);
+    res.status(200).send(customers);
 }
 
 module.exports.update = (req, res)=>{
