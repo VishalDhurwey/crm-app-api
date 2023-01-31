@@ -1,5 +1,5 @@
-
-1. Display user table.
-2. Add new users.
-3. Update users.
-4. Deactive/Activate
+1. Redirect to user page from user button.
+2. Display user table.
+3. Add new users.
+4. Update users.
+5. Deactive/Activate

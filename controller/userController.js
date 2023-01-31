@@ -31,7 +31,7 @@ module.exports.signup=(req, res)=>{
 
 module.exports.signin=(req, res)=>{
     let user = req.body;
-    if(!user.email || !user.password){
+    if(!user.email || !user.password || !user.isActive){
         return res.status(400).send("Email and Password is required");
     }
     let foundUser = users.find(i=> i.email==user.email && i.password==user.password);
