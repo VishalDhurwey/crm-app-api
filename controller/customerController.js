@@ -6,7 +6,8 @@ const customers= [
         "ceo":"Uknown",
         "employees":"200000",
         "year":"1995",
-        "turnover":"100000000"
+        "turnover":"100000000",
+        "status":"New"
     },
     {
         "name":"TCS",
@@ -14,7 +15,17 @@ const customers= [
         "ceo":"Uknown",
         "employees":"300000",
         "year":"1995",
-        "turnover":"200000000"
+        "turnover":"200000000",
+        "status":"Accepted"
+    },
+    {
+        "name":"IRCTC",
+        "website":"www.irctc.com",
+        "ceo":"GOI",
+        "employees":"500000",
+        "year":"1925",
+        "turnover":"200000000",
+        "status":"Rejected"
     }
 ];
 

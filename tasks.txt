@@ -1,8 +1,8 @@
 
-1. Show deactivate/activate button dependeing of user's type.
+1. Show deactivate/activate button dependeing of user's type. - done.
 2. On click of buttons, call api and update users.
-    on success, get all users and update the table.
+    on success, get all users and update the table. - done.
 3. Add Status for customer.
-4. Update status of customer.
+4. Update status of customer. - optional.
 5. Show different color in column depending on status.
 6. Create a dashboard to show statuses of customers.
