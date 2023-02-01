@@ -1,5 +1,8 @@
-1. Redirect to user page from user button.
-2. Display user table.
-3. Add new users.
-4. Update users.
-5. Deactive/Activate
+
+1. Show deactivate/activate button dependeing of user's type.
+2. On click of buttons, call api and update users.
+    on success, get all users and update the table.
+3. Add Status for customer.
+4. Update status of customer.
+5. Show different color in column depending on status.
+6. Create a dashboard to show statuses of customers.
