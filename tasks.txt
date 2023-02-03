@@ -4,5 +4,5 @@
     on success, get all users and update the table. - done.
 3. Add Status for customer.
 4. Update status of customer. - optional.
-5. Show different color in column depending on status.
+5. Show different background-color in column depending on status. - done.
 6. Create a dashboard to show statuses of customers.
