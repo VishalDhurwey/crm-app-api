@@ -16285,7 +16285,7 @@ const customers= [
 
 module.exports.get = (req, res)=>{
     const obj = {
-        "records": customers.slice(0,20),
+        "records": customers.slice(0,100),
         "totalCount":customers.length
     }
     res.status(200).send(obj);
