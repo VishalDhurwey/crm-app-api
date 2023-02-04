@@ -4,7 +4,7 @@ const controller = require("../controller/customerController");
 
 const router = express.Router();
 
-router.get("/", controller.get);
+router.get("/page/:page", controller.get);
 router.post("/", controller.add);
 router.put("/", controller.update)
 router.delete("/:name", controller.delete);
