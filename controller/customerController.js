@@ -16292,6 +16292,15 @@ module.exports.get = (req, res)=>{
     res.status(200).send(obj);
 }
 
+module.exports.getByName = (req, res)=>{
+  const name = req.params.name;
+  const result = customers.find(c=> c.name==name);
+  if(!result){
+    return res.status(404).send();
+  }
+  return res.status(200).send(result);
+}
+
 module.exports.add = (req, res)=>{
     const customer = req.body;
     customers.push(customer);
@@ -16300,9 +16309,10 @@ module.exports.add = (req, res)=>{
 
 module.exports.update = (req, res)=>{
     const customer = req.body;
-    let foundCustomerIndex = customers.findIndex(c=> c.name==customer.name);
+    let foundCustomerIndex = customers.findIndex(c=> c._id==customer._id);
+    console.log(foundCustomerIndex);
+    console.log(customer);
     customers[foundCustomerIndex]=customer;
-    console.log(customers);
     res.status(200).send(customers);
 }
 

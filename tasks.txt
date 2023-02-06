@@ -1,8 +1,6 @@
 
-1. Show deactivate/activate button dependeing of user's type. - done.
-2. On click of buttons, call api and update users.
-    on success, get all users and update the table. - done.
-3. Add Status for customer.
-4. Update status of customer. - optional.
-5. Show different background-color in column depending on status. - done.
-6. Create a dashboard to show statuses of customers.
+1. Fix Customer update.
+2. Fix Customer Delete.
+3. Table component to display all issues.
+4. Ability to add a new ticket.
+5. Ability to update ticket's status.
