@@ -19,3 +19,9 @@ const tickets = [
 module.exports.get = (req,res)=>{
     res.status(200).send(tickets);
 }
+
+module.exports.add = (req, res)=>{
+    const ticket = req.body;
+    tickets.push(ticket);
+    res.status(200).send(tickets);
+}
