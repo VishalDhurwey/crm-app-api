@@ -4382,6 +4382,12 @@ module.exports.add = (req, res)=>{
     res.status(200).send(customers);
 }
 
+
+module.exports.getAll = (req, res)=>{
+  res.status(200).send(customers);
+}
+
+
 module.exports.update = (req, res)=>{
     const customer = req.body;
     let foundCustomerIndex = customers.findIndex(c=> c._id==customer._id);
