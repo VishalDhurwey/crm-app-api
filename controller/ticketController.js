@@ -20,6 +20,12 @@ module.exports.get = (req,res)=>{
     res.status(200).send(tickets);
 }
 
+module.exports.getByDesc = (req,res)=>{
+    const desc = req.params.desc;
+    const result = tickets.find(t=> t.desc==desc);
+    return res.send(result);
+}
+
 module.exports.add = (req, res)=>{
     const ticket = req.body;
     tickets.push(ticket);
