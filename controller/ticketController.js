@@ -25,3 +25,10 @@ module.exports.add = (req, res)=>{
     tickets.push(ticket);
     res.status(200).send(tickets);
 }
+
+module.exports.update = (req, res)=>{
+    const ticket = req.body;
+    let foundTicketIndex = tickets.findIndex(t=> t.customer==ticket.customer && t.raisedOn==ticket.raisedOn);
+    tickets[foundTicketIndex]=ticket;
+    res.status(200).send(tickets);
+}
