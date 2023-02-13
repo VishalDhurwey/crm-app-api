@@ -1,14 +1,14 @@
 
 const tickets = [
     {
-        "customer":"VICON",
+        "customer":"PRISMATIC",
         "desc":"Can't load my invoices",
         "status":"Assigned",
         "assignedTo":"Admin User",
         "raisedOn":"01/02/2022"
     },
     {
-        "customer":"DANCERITY",
+        "customer":"ZOUNDS",
         "desc":"Page is not loading",
         "status":"In Progress",
         "assignedTo":"Admin User",
