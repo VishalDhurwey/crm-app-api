@@ -4363,9 +4363,10 @@ const customers= [
 module.exports.get = (req, res)=>{
     const page = req.params.page;
     const obj = {
-        "records": customers.slice((page-1)*100,100*page),
-        "totalCount":customers.length
+      "records": customers.slice((page-1)*100,100*page),
+      "totalCount":customers.length
     }
+    
     res.status(200).send(obj);
 }
 
@@ -4382,7 +4383,7 @@ module.exports.add = (req, res)=>{
     const customer = req.body;
     customers.push(customer);
     res.status(200).send(customers);
-};
+}
 
 
 

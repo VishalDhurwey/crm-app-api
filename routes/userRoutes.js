@@ -10,5 +10,7 @@ router.get("/", controller.getAll);
 router.put("/activate/:username", controller.activate);
 router.put("/deActivate/:username", controller.deActivate);
 router.delete("/delete/:username", controller.delete);
+router.delete("/edit/:username", controller.update);
+
 
 module.exports.router = router;
