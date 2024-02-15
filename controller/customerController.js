@@ -1,4 +1,6 @@
 
+// const repo = require("../repositories/customerRepository")
+
 const customers= [
     {
       "_id": "63dddee8338e1da7dde9af3d",
@@ -4380,7 +4382,8 @@ module.exports.add = (req, res)=>{
     const customer = req.body;
     customers.push(customer);
     res.status(200).send(customers);
-}
+};
+
 
 
 module.exports.getAll = (req, res)=>{
@@ -4404,4 +4407,6 @@ module.exports.delete = (req, res)=>{
     console.log(customers);
     res.status(200).send(customers);
 }
+
+
 

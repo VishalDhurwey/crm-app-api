@@ -9,5 +9,6 @@ router.post("/signin", controller.signin);
 router.get("/", controller.getAll);
 router.put("/activate/:username", controller.activate);
 router.put("/deActivate/:username", controller.deActivate);
+router.delete("/delete/:username", controller.delete);
 
 module.exports.router = router;

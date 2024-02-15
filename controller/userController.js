@@ -13,6 +13,13 @@ const users = [
         "password":"Password1",
         "email":"david.doe@gmail.com",
         "isActive":false
+    },
+    {
+        "name":"asd",
+        "username":"asd",
+        "password":"asd",
+        "email":"asd@gmail.com",
+        "isActive":false
     }
 ];
 
@@ -54,4 +61,14 @@ module.exports.deActivate = (req, res)=>{
     let foundUserIndex = users.findIndex(c=> c.username==name);
     users[foundUserIndex].isActive=false;
     res.status(200).send(users);
+
+    
+}
+
+module.exports.delete = (req, res)=>{
+    const name = req.params.username;
+    let foundCustomerIndex = users.findIndex(c=> c.username==name);
+    users.splice(foundCustomerIndex, 1);  
+    res.status(200).send(users);
+    
 }
