@@ -6,7 +6,9 @@ const mongodb = require("mongodb");
 const client = mongodb.MongoClient;
 
 // 3. Define URL
-const url = "mongodb://localhost:27017/crmdb";
+//const url = "mongodb://localhost:27017/crmdb";
+
+const url = "mongodb+srv://vldhurwey:123zxcroot@cluster0.ivoha.mongodb.net/?retryWrites=true&w=majority&appName=cluster0";
 
 let resultClient;
 
